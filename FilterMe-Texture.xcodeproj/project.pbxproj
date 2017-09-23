@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA8F4D12196A824D007CBE93 /* FeBasicAnimationBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8F4D11196A824D007CBE93 /* FeBasicAnimationBlock.m */; };
+		BA9D01E41969192D009C1379 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9D01E31969192D009C1379 /* Foundation.framework */; };
+		BA9D01E61969192D009C1379 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9D01E51969192D009C1379 /* CoreGraphics.framework */; };
+		BA9D01E81969192D009C1379 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9D01E71969192D009C1379 /* UIKit.framework */; };
+		BA9D01EE1969192D009C1379 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA9D01EC1969192D009C1379 /* InfoPlist.strings */; };
+		BA9D01F01969192D009C1379 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9D01EF1969192D009C1379 /* main.m */; };
+		BA9D01F41969192D009C1379 /* FeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9D01F31969192D009C1379 /* FeAppDelegate.m */; };
+		BA9D01F71969192D009C1379 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA9D01F51969192D009C1379 /* Main.storyboard */; };
+		BA9D01FA1969192D009C1379 /* FeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9D01F91969192D009C1379 /* FeViewController.m */; };
+		BA9D01FC1969192D009C1379 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA9D01FB1969192D009C1379 /* Images.xcassets */; };
+		BA9D02031969192D009C1379 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9D02021969192D009C1379 /* XCTest.framework */; };
+		BA9D02041969192D009C1379 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9D01E31969192D009C1379 /* Foundation.framework */; };
+		BA9D02051969192D009C1379 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9D01E71969192D009C1379 /* UIKit.framework */; };
+		BA9D020D1969192D009C1379 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA9D020B1969192D009C1379 /* InfoPlist.strings */; };
+		BA9D020F1969192D009C1379 /* FilterMe_TextureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9D020E1969192D009C1379 /* FilterMe_TextureTests.m */; };
+		BA9D022719691D30009C1379 /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9D022019691D1F009C1379 /* libGPUImage.a */; };
+		BA9D022919691D3A009C1379 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9D022819691D3A009C1379 /* QuartzCore.framework */; };
+		BA9D022B19691D42009C1379 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9D022A19691D42009C1379 /* CoreMedia.framework */; };
+		BA9D022D19691D49009C1379 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9D022C19691D49009C1379 /* CoreVideo.framework */; };
+		BA9D022F19691D51009C1379 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9D022E19691D51009C1379 /* OpenGLES.framework */; };
+		BA9D023119691D54009C1379 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9D023019691D54009C1379 /* AVFoundation.framework */; };
+		BA9D023719691F21009C1379 /* FeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9D023619691F21009C1379 /* FeCell.m */; };
+		BA9D02391969210C009C1379 /* originalPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA9D02381969210C009C1379 /* originalPhoto.jpg */; };
+		BA9D026219693018009C1379 /* texture_colorBurnBlend_1.png in Resources */ = {isa = PBXBuildFile; fileRef = BA9D025819693018009C1379 /* texture_colorBurnBlend_1.png */; };
+		BA9D026319693018009C1379 /* texture_linearBurnBlend_1.png in Resources */ = {isa = PBXBuildFile; fileRef = BA9D025919693018009C1379 /* texture_linearBurnBlend_1.png */; };
+		BA9D026419693018009C1379 /* texture_multiplyBlend_1.png in Resources */ = {isa = PBXBuildFile; fileRef = BA9D025A19693018009C1379 /* texture_multiplyBlend_1.png */; };
+		BA9D026519693018009C1379 /* texture_normalBlend_1.png in Resources */ = {isa = PBXBuildFile; fileRef = BA9D025B19693018009C1379 /* texture_normalBlend_1.png */; };
+		BA9D026619693018009C1379 /* texture_normalBlend_2.png in Resources */ = {isa = PBXBuildFile; fileRef = BA9D025C19693018009C1379 /* texture_normalBlend_2.png */; };
+		BA9D026719693018009C1379 /* texture_normalBlend_3.png in Resources */ = {isa = PBXBuildFile; fileRef = BA9D025D19693018009C1379 /* texture_normalBlend_3.png */; };
+		BA9D026819693018009C1379 /* texture_normalBlend_4.png in Resources */ = {isa = PBXBuildFile; fileRef = BA9D025E19693018009C1379 /* texture_normalBlend_4.png */; };
+		BA9D026919693018009C1379 /* texture_overlayBlend_1.png in Resources */ = {isa = PBXBuildFile; fileRef = BA9D025F19693018009C1379 /* texture_overlayBlend_1.png */; };
+		BA9D026A19693018009C1379 /* texture_overlayBlend_2.png in Resources */ = {isa = PBXBuildFile; fileRef = BA9D026019693018009C1379 /* texture_overlayBlend_2.png */; };
+		BA9D026B19693018009C1379 /* texture_screenBlend_1.png in Resources */ = {isa = PBXBuildFile; fileRef = BA9D026119693018009C1379 /* texture_screenBlend_1.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA9D02061969192D009C1379 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA9D01D81969192D009C1379 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA9D01DF1969192D009C1379;
+			remoteInfo = "FilterMe-Texture";
+		};
+		BA9D021F19691D1F009C1379 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA9D021819691D1F009C1379 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCF1A33414DDB1EC00852800;
+			remoteInfo = GPUImage;
+		};
+		BA9D022119691D1F009C1379 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA9D021819691D1F009C1379 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCF1A34414DDB1EC00852800;
+			remoteInfo = GPUImageTests;
+		};
+		BA9D022319691D1F009C1379 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA9D021819691D1F009C1379 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCE209E51943F20C002FEED8;
+			remoteInfo = GPUImageFramework;
+		};
+		BA9D022519691D28009C1379 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA9D021819691D1F009C1379 /* GPUImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BCF1A33314DDB1EC00852800;
+			remoteInfo = GPUImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA8F4D10196A824D007CBE93 /* FeBasicAnimationBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeBasicAnimationBlock.h; sourceTree = "<group>"; };
+		BA8F4D11196A824D007CBE93 /* FeBasicAnimationBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeBasicAnimationBlock.m; sourceTree = "<group>"; };
+		BA9D01E01969192D009C1379 /* FilterMe-Texture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FilterMe-Texture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA9D01E31969192D009C1379 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BA9D01E51969192D009C1379 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BA9D01E71969192D009C1379 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BA9D01EB1969192D009C1379 /* FilterMe-Texture-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FilterMe-Texture-Info.plist"; sourceTree = "<group>"; };
+		BA9D01ED1969192D009C1379 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BA9D01EF1969192D009C1379 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA9D01F11969192D009C1379 /* FilterMe-Texture-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FilterMe-Texture-Prefix.pch"; sourceTree = "<group>"; };
+		BA9D01F21969192D009C1379 /* FeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeAppDelegate.h; sourceTree = "<group>"; };
+		BA9D01F31969192D009C1379 /* FeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeAppDelegate.m; sourceTree = "<group>"; };
+		BA9D01F61969192D009C1379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA9D01F81969192D009C1379 /* FeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeViewController.h; sourceTree = "<group>"; };
+		BA9D01F91969192D009C1379 /* FeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeViewController.m; sourceTree = "<group>"; };
+		BA9D01FB1969192D009C1379 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BA9D02011969192D009C1379 /* FilterMe-TextureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FilterMe-TextureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA9D02021969192D009C1379 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BA9D020A1969192D009C1379 /* FilterMe-TextureTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FilterMe-TextureTests-Info.plist"; sourceTree = "<group>"; };
+		BA9D020C1969192D009C1379 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BA9D020E1969192D009C1379 /* FilterMe_TextureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterMe_TextureTests.m; sourceTree = "<group>"; };
+		BA9D021819691D1F009C1379 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = Submodules/GPUImage/framework/GPUImage.xcodeproj; sourceTree = SOURCE_ROOT; };
+		BA9D022819691D3A009C1379 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BA9D022A19691D42009C1379 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		BA9D022C19691D49009C1379 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		BA9D022E19691D51009C1379 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		BA9D023019691D54009C1379 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BA9D023519691F21009C1379 /* FeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeCell.h; sourceTree = "<group>"; };
+		BA9D023619691F21009C1379 /* FeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeCell.m; sourceTree = "<group>"; };
+		BA9D02381969210C009C1379 /* originalPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = originalPhoto.jpg; sourceTree = "<group>"; };
+		BA9D025819693018009C1379 /* texture_colorBurnBlend_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture_colorBurnBlend_1.png; sourceTree = "<group>"; };
+		BA9D025919693018009C1379 /* texture_linearBurnBlend_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture_linearBurnBlend_1.png; sourceTree = "<group>"; };
+		BA9D025A19693018009C1379 /* texture_multiplyBlend_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture_multiplyBlend_1.png; sourceTree = "<group>"; };
+		BA9D025B19693018009C1379 /* texture_normalBlend_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture_normalBlend_1.png; sourceTree = "<group>"; };
+		BA9D025C19693018009C1379 /* texture_normalBlend_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture_normalBlend_2.png; sourceTree = "<group>"; };
+		BA9D025D19693018009C1379 /* texture_normalBlend_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture_normalBlend_3.png; sourceTree = "<group>"; };
+		BA9D025E19693018009C1379 /* texture_normalBlend_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture_normalBlend_4.png; sourceTree = "<group>"; };
+		BA9D025F19693018009C1379 /* texture_overlayBlend_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture_overlayBlend_1.png; sourceTree = "<group>"; };
+		BA9D026019693018009C1379 /* texture_overlayBlend_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture_overlayBlend_2.png; sourceTree = "<group>"; };
+		BA9D026119693018009C1379 /* texture_screenBlend_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture_screenBlend_1.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA9D01DD1969192D009C1379 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA9D023119691D54009C1379 /* AVFoundation.framework in Frameworks */,
+				BA9D022F19691D51009C1379 /* OpenGLES.framework in Frameworks */,
+				BA9D022D19691D49009C1379 /* CoreVideo.framework in Frameworks */,
+				BA9D022B19691D42009C1379 /* CoreMedia.framework in Frameworks */,
+				BA9D022919691D3A009C1379 /* QuartzCore.framework in Frameworks */,
+				BA9D022719691D30009C1379 /* libGPUImage.a in Frameworks */,
+				BA9D01E61969192D009C1379 /* CoreGraphics.framework in Frameworks */,
+				BA9D01E81969192D009C1379 /* UIKit.framework in Frameworks */,
+				BA9D01E41969192D009C1379 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA9D01FE1969192D009C1379 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA9D02031969192D009C1379 /* XCTest.framework in Frameworks */,
+				BA9D02051969192D009C1379 /* UIKit.framework in Frameworks */,
+				BA9D02041969192D009C1379 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA9D01D71969192D009C1379 = {
+			isa = PBXGroup;
+			children = (
+				BA9D01E91969192D009C1379 /* FilterMe-Texture */,
+				BA9D02081969192D009C1379 /* FilterMe-TextureTests */,
+				BA9D01E21969192D009C1379 /* Frameworks */,
+				BA9D01E11969192D009C1379 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA9D01E11969192D009C1379 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA9D01E01969192D009C1379 /* FilterMe-Texture.app */,
+				BA9D02011969192D009C1379 /* FilterMe-TextureTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA9D01E21969192D009C1379 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA9D023019691D54009C1379 /* AVFoundation.framework */,
+				BA9D022E19691D51009C1379 /* OpenGLES.framework */,
+				BA9D022C19691D49009C1379 /* CoreVideo.framework */,
+				BA9D022A19691D42009C1379 /* CoreMedia.framework */,
+				BA9D022819691D3A009C1379 /* QuartzCore.framework */,
+				BA9D01E31969192D009C1379 /* Foundation.framework */,
+				BA9D01E51969192D009C1379 /* CoreGraphics.framework */,
+				BA9D01E71969192D009C1379 /* UIKit.framework */,
+				BA9D02021969192D009C1379 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA9D01E91969192D009C1379 /* FilterMe-Texture */ = {
+			isa = PBXGroup;
+			children = (
+				BA8F4D10196A824D007CBE93 /* FeBasicAnimationBlock.h */,
+				BA8F4D11196A824D007CBE93 /* FeBasicAnimationBlock.m */,
+				BA9D023A1969211A009C1379 /* Photo */,
+				BA9D023419691F10009C1379 /* FeCell */,
+				BA9D023319691F0C009C1379 /* LUT */,
+				BA9D023219691F05009C1379 /* Texture */,
+				BA9D021819691D1F009C1379 /* GPUImage.xcodeproj */,
+				BA9D01F21969192D009C1379 /* FeAppDelegate.h */,
+				BA9D01F31969192D009C1379 /* FeAppDelegate.m */,
+				BA9D01F51969192D009C1379 /* Main.storyboard */,
+				BA9D01F81969192D009C1379 /* FeViewController.h */,
+				BA9D01F91969192D009C1379 /* FeViewController.m */,
+				BA9D01FB1969192D009C1379 /* Images.xcassets */,
+				BA9D01EA1969192D009C1379 /* Supporting Files */,
+			);
+			path = "FilterMe-Texture";
+			sourceTree = "<group>";
+		};
+		BA9D01EA1969192D009C1379 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA9D01EB1969192D009C1379 /* FilterMe-Texture-Info.plist */,
+				BA9D01EC1969192D009C1379 /* InfoPlist.strings */,
+				BA9D01EF1969192D009C1379 /* main.m */,
+				BA9D01F11969192D009C1379 /* FilterMe-Texture-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA9D02081969192D009C1379 /* FilterMe-TextureTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA9D020E1969192D009C1379 /* FilterMe_TextureTests.m */,
+				BA9D02091969192D009C1379 /* Supporting Files */,
+			);
+			path = "FilterMe-TextureTests";
+			sourceTree = "<group>";
+		};
+		BA9D02091969192D009C1379 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA9D020A1969192D009C1379 /* FilterMe-TextureTests-Info.plist */,
+				BA9D020B1969192D009C1379 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA9D021919691D1F009C1379 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA9D022019691D1F009C1379 /* libGPUImage.a */,
+				BA9D022219691D1F009C1379 /* GPUImageTests.octest */,
+				BA9D022419691D1F009C1379 /* GPUImage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA9D023219691F05009C1379 /* Texture */ = {
+			isa = PBXGroup;
+			children = (
+				BA9D025819693018009C1379 /* texture_colorBurnBlend_1.png */,
+				BA9D025919693018009C1379 /* texture_linearBurnBlend_1.png */,
+				BA9D025A19693018009C1379 /* texture_multiplyBlend_1.png */,
+				BA9D025B19693018009C1379 /* texture_normalBlend_1.png */,
+				BA9D025C19693018009C1379 /* texture_normalBlend_2.png */,
+				BA9D025D19693018009C1379 /* texture_normalBlend_3.png */,
+				BA9D025E19693018009C1379 /* texture_normalBlend_4.png */,
+				BA9D025F19693018009C1379 /* texture_overlayBlend_1.png */,
+				BA9D026019693018009C1379 /* texture_overlayBlend_2.png */,
+				BA9D026119693018009C1379 /* texture_screenBlend_1.png */,
+			);
+			name = Texture;
+			sourceTree = "<group>";
+		};
+		BA9D023319691F0C009C1379 /* LUT */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = LUT;
+			sourceTree = "<group>";
+		};
+		BA9D023419691F10009C1379 /* FeCell */ = {
+			isa = PBXGroup;
+			children = (
+				BA9D023519691F21009C1379 /* FeCell.h */,
+				BA9D023619691F21009C1379 /* FeCell.m */,
+			);
+			name = FeCell;
+			sourceTree = "<group>";
+		};
+		BA9D023A1969211A009C1379 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				BA9D02381969210C009C1379 /* originalPhoto.jpg */,
+			);
+			name = Photo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA9D01DF1969192D009C1379 /* FilterMe-Texture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA9D02121969192D009C1379 /* Build configuration list for PBXNativeTarget "FilterMe-Texture" */;
+			buildPhases = (
+				BA9D01DC1969192D009C1379 /* Sources */,
+				BA9D01DD1969192D009C1379 /* Frameworks */,
+				BA9D01DE1969192D009C1379 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA9D022619691D28009C1379 /* PBXTargetDependency */,
+			);
+			name = "FilterMe-Texture";
+			productName = "FilterMe-Texture";
+			productReference = BA9D01E01969192D009C1379 /* FilterMe-Texture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA9D02001969192D009C1379 /* FilterMe-TextureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA9D02151969192D009C1379 /* Build configuration list for PBXNativeTarget "FilterMe-TextureTests" */;
+			buildPhases = (
+				BA9D01FD1969192D009C1379 /* Sources */,
+				BA9D01FE1969192D009C1379 /* Frameworks */,
+				BA9D01FF1969192D009C1379 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA9D02071969192D009C1379 /* PBXTargetDependency */,
+			);
+			name = "FilterMe-TextureTests";
+			productName = "FilterMe-TextureTests";
+			productReference = BA9D02011969192D009C1379 /* FilterMe-TextureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA9D01D81969192D009C1379 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Fe;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Fe;
+				TargetAttributes = {
+					BA9D02001969192D009C1379 = {
+						TestTargetID = BA9D01DF1969192D009C1379;
+					};
+				};
+			};
+			buildConfigurationList = BA9D01DB1969192D009C1379 /* Build configuration list for PBXProject "FilterMe-Texture" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA9D01D71969192D009C1379;
+			productRefGroup = BA9D01E11969192D009C1379 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BA9D021919691D1F009C1379 /* Products */;
+					ProjectRef = BA9D021819691D1F009C1379 /* GPUImage.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				BA9D01DF1969192D009C1379 /* FilterMe-Texture */,
+				BA9D02001969192D009C1379 /* FilterMe-TextureTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BA9D022019691D1F009C1379 /* libGPUImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGPUImage.a;
+			remoteRef = BA9D021F19691D1F009C1379 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BA9D022219691D1F009C1379 /* GPUImageTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GPUImageTests.octest;
+			remoteRef = BA9D022119691D1F009C1379 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BA9D022419691D1F009C1379 /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = BA9D022319691D1F009C1379 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA9D01DE1969192D009C1379 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA9D026719693018009C1379 /* texture_normalBlend_3.png in Resources */,
+				BA9D01FC1969192D009C1379 /* Images.xcassets in Resources */,
+				BA9D026419693018009C1379 /* texture_multiplyBlend_1.png in Resources */,
+				BA9D026519693018009C1379 /* texture_normalBlend_1.png in Resources */,
+				BA9D026319693018009C1379 /* texture_linearBurnBlend_1.png in Resources */,
+				BA9D026B19693018009C1379 /* texture_screenBlend_1.png in Resources */,
+				BA9D026219693018009C1379 /* texture_colorBurnBlend_1.png in Resources */,
+				BA9D026619693018009C1379 /* texture_normalBlend_2.png in Resources */,
+				BA9D026819693018009C1379 /* texture_normalBlend_4.png in Resources */,
+				BA9D026919693018009C1379 /* texture_overlayBlend_1.png in Resources */,
+				BA9D026A19693018009C1379 /* texture_overlayBlend_2.png in Resources */,
+				BA9D01EE1969192D009C1379 /* InfoPlist.strings in Resources */,
+				BA9D01F71969192D009C1379 /* Main.storyboard in Resources */,
+				BA9D02391969210C009C1379 /* originalPhoto.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA9D01FF1969192D009C1379 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA9D020D1969192D009C1379 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA9D01DC1969192D009C1379 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA8F4D12196A824D007CBE93 /* FeBasicAnimationBlock.m in Sources */,
+				BA9D01F01969192D009C1379 /* main.m in Sources */,
+				BA9D01FA1969192D009C1379 /* FeViewController.m in Sources */,
+				BA9D023719691F21009C1379 /* FeCell.m in Sources */,
+				BA9D01F41969192D009C1379 /* FeAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA9D01FD1969192D009C1379 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA9D020F1969192D009C1379 /* FilterMe_TextureTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA9D02071969192D009C1379 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA9D01DF1969192D009C1379 /* FilterMe-Texture */;
+			targetProxy = BA9D02061969192D009C1379 /* PBXContainerItemProxy */;
+		};
+		BA9D022619691D28009C1379 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUImage;
+			targetProxy = BA9D022519691D28009C1379 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA9D01EC1969192D009C1379 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA9D01ED1969192D009C1379 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BA9D01F51969192D009C1379 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA9D01F61969192D009C1379 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA9D020B1969192D009C1379 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA9D020C1969192D009C1379 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA9D02101969192D009C1379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BA9D02111969192D009C1379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA9D02131969192D009C1379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FilterMe-Texture/FilterMe-Texture-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"Submodules/GPUImage/framework/**",
+				);
+				INFOPLIST_FILE = "FilterMe-Texture/FilterMe-Texture-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fe.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BA9D02141969192D009C1379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FilterMe-Texture/FilterMe-Texture-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"Submodules/GPUImage/framework/**",
+				);
+				INFOPLIST_FILE = "FilterMe-Texture/FilterMe-Texture-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fe.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BA9D02161969192D009C1379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FilterMe-Texture.app/FilterMe-Texture";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FilterMe-Texture/FilterMe-Texture-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FilterMe-TextureTests/FilterMe-TextureTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fe.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BA9D02171969192D009C1379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FilterMe-Texture.app/FilterMe-Texture";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FilterMe-Texture/FilterMe-Texture-Prefix.pch";
+				INFOPLIST_FILE = "FilterMe-TextureTests/FilterMe-TextureTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fe.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA9D01DB1969192D009C1379 /* Build configuration list for PBXProject "FilterMe-Texture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA9D02101969192D009C1379 /* Debug */,
+				BA9D02111969192D009C1379 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA9D02121969192D009C1379 /* Build configuration list for PBXNativeTarget "FilterMe-Texture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA9D02131969192D009C1379 /* Debug */,
+				BA9D02141969192D009C1379 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA9D02151969192D009C1379 /* Build configuration list for PBXNativeTarget "FilterMe-TextureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA9D02161969192D009C1379 /* Debug */,
+				BA9D02171969192D009C1379 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA9D01D81969192D009C1379 /* Project object */;
+}
